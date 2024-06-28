@@ -1,5 +1,5 @@
 {% set name = "langchain-chroma" %}
-{% set version = "0.1.1" %}
+{% set version = "0.1.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/langchain_chroma-{{ version }}.tar.gz
-  sha256: fb17c0cc591a425179958ca8cdb25d6cc9e43f4954a1ad4f3fe9cc2d306c455a
+  sha256: 745a53b93e7ae058f9666a48e15ff211122656032ed0e8ffb7291b402f5bf23b
 
 build:
   noarch: python
