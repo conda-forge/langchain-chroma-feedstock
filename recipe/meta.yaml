@@ -1,5 +1,5 @@
 {% set name = "langchain-chroma" %}
-{% set version = "0.2.5" %}
+{% set version = "0.2.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/langchain_chroma-{{ version }}.tar.gz
-  sha256: b63e9df8c3fbb316313c232214b7bc8b696a505039a6f7adf29b992a74cc4b2e
+  sha256: ec5ca0f6f7692ac053741e076ea086c4be0cfcb5846c8693b1bcc3089c88b65e
 
 build:
   noarch: python
@@ -21,8 +21,8 @@ requirements:
     - pip
   run:
     - python >={{ python_min }},<3.13
-    - langchain-core >=0.3.70
-    - chromadb >=1.0.9
+    - langchain-core >=0.3.76
+    - chromadb >=1.0.20
     - numpy >=1.26.0
     - fastapi <1,>=0.95.2
   run_constrained:
